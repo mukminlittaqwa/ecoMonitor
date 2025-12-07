@@ -84,7 +84,7 @@ const AppHeader: React.FC = () => {
           </button>
 
           <Link href="/" className="lg:hidden">
-            <span className="Nusantara Monitoring"></span>
+            <span className="text-white">Nusantara Monitoring</span>
             {/* <Image
               width={154}
               height={32}
