@@ -15,8 +15,8 @@ import {
   PieChart,
   ChevronDown,
   MoreHorizontal,
-} from "lucide-react"; // ← Semua dari lucide-react
-import SidebarWidget from "./SidebarWidget";
+} from "lucide-react";
+// import SidebarWidget from "./SidebarWidget";
 
 type NavItem = {
   name: string;
@@ -30,6 +30,11 @@ const navItems: NavItem[] = [
     icon: <LayoutDashboard className="w-5 h-5" />,
     name: "Dashboard",
     path: "/",
+  },
+  {
+    icon: <Table className="w-5 h-5" />,
+    name: "Destana",
+    path: "/destana",
   },
   // {
   //   icon: <Calendar className="w-5 h-5" />,
