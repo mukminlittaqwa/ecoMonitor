@@ -10,6 +10,7 @@ import { CommandPosts } from "@/components/dashboard/destana/summary/CommandPost
 import { EwsSensor } from "@/components/dashboard/destana/summary/EwsCencor";
 import TableVillages from "@/components/dashboard/destana/TableVillages";
 import Card from "@/components/ui/card/Card";
+import WeatherWidget from "@/components/dashboard/WeatherWidget";
 
 export const metadata: Metadata = {
   title: "Destana (Desa Tangguh Bencana)",
@@ -49,6 +50,12 @@ export default function Destana() {
             <span className="font-normal text-white pl-2">Fostering community self-reliance in managing resources and reducing risk through community-based disaster risk reduction (CBDRR) principles.</span>
             <TableVillages /></Card>
         </div>
+      </section>
+
+      <section className="w-full">
+        <Card className="">
+          <WeatherWidget />
+        </Card>
       </section>
     </div>
   );

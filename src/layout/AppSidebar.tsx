@@ -15,6 +15,7 @@ import {
   PieChart,
   ChevronDown,
   MoreHorizontal,
+  LeafIcon
 } from "lucide-react";
 // import SidebarWidget from "./SidebarWidget";
 
@@ -36,11 +37,11 @@ const navItems: NavItem[] = [
     name: "Destana",
     path: "/destana",
   },
-  // {
-  //   icon: <Calendar className="w-5 h-5" />,
-  //   name: "Calendar",
-  //   path: "/calendar",
-  // },
+  {
+    icon: <LeafIcon className="w-5 h-5" />,
+    name: "EcoMonitor",
+    path: "/eco-monitor",
+  },
   // {
   //   icon: <UserCircle className="w-5 h-5" />,
   //   name: "User Profile",
