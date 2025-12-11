@@ -20,6 +20,7 @@ import Card from "@/components/ui/card/Card";
 import WeatherWidget from "@/components/dashboard/WeatherWidget";
 import BiodiversityTable from "@/components/ecoMonitor/BiodiversityTable";
 import EarlyWarningLogCard from "@/components/ecoMonitor/EarlyWarningLogCard";
+import EcoMonitorMap from "@/components/ecoMonitor/EcoMonitorMap";
 
 const provinces = [
   "Aceh", "Sumatera Utara", "Sumatera Barat", "Riau", "Kepulauan Riau",
@@ -358,7 +359,6 @@ export default function EcoMonitor() {
           </div>
         </div>
 
-        {/* TABLE + LOG SECTION */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
             <BiodiversityTable />
@@ -366,6 +366,10 @@ export default function EcoMonitor() {
           <div className="lg:col-span-1">
             <EarlyWarningLogCard />
           </div>
+        </div>
+
+        <div className="mt-12">
+          <EcoMonitorMap height="h-[600px]" zoom={5} />
         </div>
 
       </div>
