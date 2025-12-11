@@ -369,7 +369,7 @@ export default function EcoMonitor() {
         </div>
 
         <div className="mt-12">
-          <EcoMonitorMap height="h-[600px]" zoom={5} />
+          <EcoMonitorMap height="h-[600px]" />
         </div>
 
       </div>
